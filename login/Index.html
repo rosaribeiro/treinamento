@@ -5,38 +5,53 @@
     <meta charset="utf-8" />
     <meta name="viewport" content='width=device-
     width,initial-scale=1.0' />
+
+    <link 
+      rel="stylesheet" 
+      type="text/css" 
+      href="./app.css" />
+
   </head>
   <body>
     <div class="main">
-      <div class="panel">
+      <div class="logo">
+        <img src="./asset/fingerprint.png" />
         <h1>MyLogin</h1>
         <span>A simple app of login</span>
       </div>
       <div class="panel">
         <form>
-          <label for="username">Username</label>
-          <input 
-            type="text"
-            name="username"
-            placeholder="Username"
-            maxlength="15"
-            minlength="3"
-            required
-            value=""
-          />
-          <label for="password">Password</label>
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            maxlength="15"
-            minlength="6"
-            required
-            value=""
-          />
-          <input type="submit" value="LOGIN" />
-
-        </form>
+          <div class="div-input"> 
+            <label for="username">Username</label>
+            <img src="./asset/user.png" />
+            <input
+              type="email"
+              name="username"
+              placeholder="Username"
+              maxlength="50"
+              required
+              value=""
+            />
+          </div>
+          <div class="div-input">
+            <label for="password">Password</label>
+            <img src="./asset/padlock.png" />
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              maxlength="15"
+              minlength="6"
+              required
+              value=""
+            />  
+          </div>
+          <input class="button-form" type="submit" value="Login" />
+          <button class="button-form">Sign up</button>
+        </form>  
+        <a href="./src/pages/recovery/index.html">
+          Forgot Password?
+        </a>
       </div>
     </div>
   </body>

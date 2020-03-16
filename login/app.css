@@ -1,0 +1,244 @@
+/* RESET */
+
+/* Importação da font roboto para o projeto */
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  /*altura da tela 100vh è igual a 100%*/
+  height: 100vh;
+  font-size: 62.5%; /*padronizando o tamanho da letra*/
+  overflow: hidden; /*hidden -> não permite rolar a tela*/
+}
+
+body {
+  background-color: #cccccc;
+  background-size: cover;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+/* Definido a font roboto como padrão */
+* {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 1.6em;
+}
+
+h1 {
+  font-size: 4.8em;
+}
+h2 {
+  font-size: 3.8em;
+}
+h3 {
+  font-size: 2.8em;
+}
+h4 {
+  font-size: 1.8em;
+}
+h5 {
+  font-size: 1.8em;
+  font-weight: bolder;
+}
+h6 {
+  font-size: 1.6em;
+}
+p {
+  font-size: 1.6em;
+}
+span {
+  font-size: 1.4em;
+}
+label {
+  font-size: 1.6em;
+}
+a {
+  font-size: 1.4em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* FIM DO RESET */
+
+/* ESTILO PRINCIPAL */
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  background-color: #111;
+  color: #008080;
+}
+
+.logo {
+  max-width: 100%;
+  max-height: 30%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 50px;
+}
+
+.panel {
+  max-width: 100%;
+  max-height: 70%;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-input {
+  max-width: 100%;
+  max-height: 80px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-input input {
+  width: 320px;
+  height: 60px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #008080;
+  font-size: 0.8em;
+  color: #fff;
+
+  padding-left: 40px;
+  padding-right: 10px;
+}
+
+.div-input input:focus {
+  border-bottom: 2px solid #ccc;
+}
+
+.div-input input:focus::placeholder{
+  color: #fff;
+}
+
+.div-input input::placeholder {
+  color: #008080;
+}
+
+.div-input img{
+  width: 24px;
+
+  position: relative;
+  top: 13px;
+  margin-right: -40px;
+}
+
+.button-form {
+  width: 320px;
+  margin: 10px;
+  margin-top: 60px;
+
+  background-color: #008080;
+  border: none;
+  height: 40px;
+  color: #fff;
+  font-weight: lighter;
+  font-size: 1em;
+
+  cursor: pointer;
+
+  border-radius: 2px;
+}
+
+.button-form:hover{
+  background-color: #38a2a2;
+}
+
+.panel form button {
+  background-color: transparent;
+  border: 1px solid #008080;
+  margin-top: 0;
+}
+
+.panel form button:hover {
+  background-color: #008080;
+}
+
+.panel a {
+  color: #fff;
+  font-size: 0.9em;
+  margin: 40px;
+  margin-top: 10px;
+}
+
+.panel a:hover{
+  color: #008080;
+  font-weight: bold;
+}
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 414px) {
+  .logo {
+    font-size: 1em;
+    margin-bottom: 10%;
+  }
+
+  .panel form {
+    font-size: 1em;
+  }
+
+  .panel form label {
+    display: none;
+  }
+
+  .div-input {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 414px) 
+and (min-height: 812px) 
+and (max-height: 823px){
+  .panel form {
+    height: 500px;
+  }
+}
+
+@media screen and (width: 320px){
+  .div-input input {
+    width: 260px;
+  }
+
+  .button-form {
+    width: 260px;
+  }
+}
+
+
+/* min-width: 768px*/
+
+
