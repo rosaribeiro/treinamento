@@ -178,6 +178,8 @@ a {
   background-color: #38a2a2;
 }
 
+
+
 .panel form button {
   background-color: transparent;
   border: 1px solid #008080;
@@ -200,24 +202,74 @@ a {
   font-weight: bold;
 }
 
+.panel form div a{
+  border: 1px solid #008080;
+  width: 320px;
+  height: 40px;
+  margin: 10px;
+ 
+  font-size: 0.7em;
+  font-weight: lighter;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel form div a:hover{
+  background-color: #38a2a2;
+  color: #fff;
+  font-weight: lighter;
+}
+
+.panel .div-panel a{
+  background-color: #008080;
+  width: 320px;
+  height: 40px;
+  margin: 10px;
+ 
+  font-size: 0.7em;
+  font-weight: lighter;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel .div-panel a:hover{
+  background-color: #38a2a2;
+  color: #fff;
+  font-weight: lighter;
+}
+
 /* RESPONSIVIDADE */
+
 @media screen and (max-width: 414px) {
-  .logo {
-    font-size: 1em;
-    margin-bottom: 10%;
-  }
 
-  .panel form {
-    font-size: 1em;
-  }
+}
+.logo {
+  font-size: 1em;
+  margin-bottom: 10%;
+}
 
-  .panel form label {
-    display: none;
-  }
+.panel form {
+  font-size: 1em;
+}
 
-  .div-input {
-    margin: 10px;
-  }
+.panel form label {
+  display: none;
+}
+
+.panel form {
+  font-size: 1em;
+}
+
+.panel form label {
+  display: none;
+}
+
+.div-input {
+  margin: 10px;
 }
 
 @media screen and (max-width: 414px) 
@@ -238,7 +290,30 @@ and (max-height: 823px){
   }
 }
 
+@media screen and (min-width: 768px){
+  .logo {
+    font-size: 1em;
+    margin-bottom: 10%;
+  }
 
-/* min-width: 768px*/
+  .panel form {
+    font-size: 1em;
+  }
 
+  .panel form label {
+    display: none;
+  }
+  
+  .panel form {
+    font-size: 1em;
+  }
 
+  .panel form label {
+    display: none;
+  }
+
+  .div-input {
+    margin: 10px;
+  } 
+
+}

@@ -9,7 +9,8 @@
     <link 
       rel="stylesheet" 
       type="text/css" 
-      href="./app.css" />
+      href="./app.css" 
+    />
 
   </head>
   <body>
@@ -20,7 +21,7 @@
         <span>A simple app of login</span>
       </div>
       <div class="panel">
-        <form>
+        <form action="./src/pages/home/index.html" method="get">
           <div class="div-input"> 
             <label for="username">Username</label>
             <img src="./asset/user.png" />
@@ -47,7 +48,7 @@
             />  
           </div>
           <input class="button-form" type="submit" value="Login" />
-          <button class="button-form">Sign up</button>
+          <div><a href="./src/pages/register/index.html">Sign up</a></div>
         </form>  
         <a href="./src/pages/recovery/index.html">
           Forgot Password?

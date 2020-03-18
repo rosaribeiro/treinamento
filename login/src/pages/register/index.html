@@ -6,47 +6,64 @@
     <meta name="viewport" content='width=device-
     width,initial-scale=1.0' />
 
+    <link 
+      rel="stylesheet" 
+      type="text/css" 
+      href="../../../app.css" 
+    />
+      
+
   </head>
   <body>
     <div class="main">
-      <div class="panel">
+      <div class="logo">
+        <img src="../../../asset/fingerprint.png" />
         <h1>MyLogin</h1>
         <span>Create Account</span>
       </div>
       <div class="panel">
         <form>
-          <label for="email">Email</label>
-          <input 
-            type="email"
-            name="email"
-            placeholder="Your best email!"
-            maxlength="50"
-            required
-            value=""
-          />
-          <label for="username">Username</label>
-          <input 
-            type="text"
-            name="username"
-            placeholder="Username"
-            maxlength="15"
-            minlength="6"
-            required
-            value=""
-          />
-          <label for="password">Password</label>
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            maxlength="15"
-            minlength="6"
-            required
-            value=""
-          />
-          <button>Cancel</button>
-          <input type="submit" value="Sign up" />
-        </form>
+          <div class="div-input">
+            <label for="email">Email</label>
+            <img src="../../../asset/envelope.png" />
+            <input 
+              type="email"
+              name="email"
+              placeholder="Your best email!"
+              maxlength="50"
+              required
+              value=""
+            />
+          </div>
+          <div class="div-input">
+            <label for="username">Username</label>
+            <img src="../../../asset/user.png" />
+            <input 
+              type="text"
+              name="username"
+              placeholder="Username"
+              maxlength="15"
+              minlength="6"
+              required
+              value=""
+            />
+          </div>
+          <div class="div-input">
+            <label for="password">Password</label>
+            <img src="../../../asset/padlock.png" />
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              maxlength="15"
+              minlength="6"
+              required
+              value=""
+            />
+          </div>
+          <input class="button-form" type="submit" value="Register" />
+          <div><a href="../../../Index.html">Cancel</a></div>
+        </form>  
       </div>
     </div>
   </body>
